@@ -1,6 +1,5 @@
 # DownloadingProgressButton
 
-[![CI Status](http://img.shields.io/travis/VAndrJ/DownloadingProgressButton.svg?style=flat)](https://travis-ci.org/VAndrJ/DownloadingProgressButton)
 [![Version](https://img.shields.io/cocoapods/v/DownloadingProgressButton.svg?style=flat)](http://cocoapods.org/pods/DownloadingProgressButton)
 [![License](https://img.shields.io/cocoapods/l/DownloadingProgressButton.svg?style=flat)](http://cocoapods.org/pods/DownloadingProgressButton)
 [![Platform](https://img.shields.io/cocoapods/p/DownloadingProgressButton.svg?style=flat)](http://cocoapods.org/pods/DownloadingProgressButton)
@@ -24,10 +23,10 @@ When the button is clicked, it will animate to pending rotation circle, inform y
 
 ```swift
 func stateWasChanged(to newState: DownloadStates, sender: DownloadingProgressButton) {
-if newState == .pending {
-// MARK: perform some actions and inform button
-sender.downloadingStarted()
-}
+    if newState == .pending {
+        // MARK: perform some actions and inform button
+        sender.downloadingStarted()
+    }
 }
 // MARK: change downloading progress
 button.downloadingProgressChanged(to: 0.2)
@@ -58,6 +57,7 @@ To run the example project, clone the repo, choose Xcode 8 or Xcode 9 project an
 ## Requirements
 
 Swift 3+
+
 Xcode 8+
 
 ## Author
