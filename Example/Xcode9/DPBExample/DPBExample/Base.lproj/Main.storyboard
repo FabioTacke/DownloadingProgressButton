@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DPBExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjR-d4-Buw" customClass="DownloadingProgressButton" customModule="DownloadingProgressButton">
+                                <rect key="frame" x="137" y="328.5" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8j7-c3-sTZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZhK-LH-xTr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onk-NV-YXT">
+                                <rect key="frame" x="159" y="36" width="56" height="30"/>
+                                <state key="normal" title="Enabled"/>
+                                <connections>
+                                    <action selector="enabled:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48E-ic-55o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-lY-usw">
+                                <rect key="frame" x="167.5" y="74" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzv-Uq-b0Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-He-xYe">
+                                <rect key="frame" x="170" y="150" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startDownloading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LVQ-w5-ZhU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A91-jz-dia">
+                                <rect key="frame" x="172" y="112" width="30" height="30"/>
+                                <state key="normal" title="Set"/>
+                                <connections>
+                                    <action selector="setDownloaded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZJ-Li-W0l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pAM-lY-usw" firstAttribute="centerX" secondItem="onk-NV-YXT" secondAttribute="centerX" id="2q5-4B-X7X"/>
+                            <constraint firstItem="pAM-lY-usw" firstAttribute="top" secondItem="onk-NV-YXT" secondAttribute="bottom" constant="8" id="58e-89-Vnd"/>
+                            <constraint firstItem="onk-NV-YXT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="QNq-GQ-bTC"/>
+                            <constraint firstItem="wjR-d4-Buw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="S4H-f0-Y76"/>
+                            <constraint firstItem="4kF-He-xYe" firstAttribute="centerX" secondItem="A91-jz-dia" secondAttribute="centerX" id="cjF-IQ-kML"/>
+                            <constraint firstItem="wjR-d4-Buw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fe1-ov-4pO"/>
+                            <constraint firstItem="A91-jz-dia" firstAttribute="centerX" secondItem="pAM-lY-usw" secondAttribute="centerX" id="g2X-I3-heP"/>
+                            <constraint firstItem="A91-jz-dia" firstAttribute="top" secondItem="pAM-lY-usw" secondAttribute="bottom" constant="8" id="h4Z-RE-9ph"/>
+                            <constraint firstItem="onk-NV-YXT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tgS-3g-vM4"/>
+                            <constraint firstItem="4kF-He-xYe" firstAttribute="top" secondItem="A91-jz-dia" secondAttribute="bottom" constant="8" id="yak-8S-MEt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="downloadingProgressButton" destination="wjR-d4-Buw" id="9s5-N8-Ndu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
