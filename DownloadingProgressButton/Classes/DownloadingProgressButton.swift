@@ -28,7 +28,7 @@ public class DownloadingProgressButton: UIControl {
     @IBInspectable var lineWidth: CGFloat = 2
     @IBInspectable var progressLineWidth: CGFloat = 2
     
-    @IBInspectable var mainColor: UIColor = UIColor(colorLiteralRed: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+    @IBInspectable var mainColor: UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
     @IBInspectable var downloadingColor: UIColor = UIColor.blue
     
     @IBInspectable var title: String = "GET"
